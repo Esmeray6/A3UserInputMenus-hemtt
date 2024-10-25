@@ -34,21 +34,13 @@ class CfgPatches {
 
 class CfgFunctions {
     class UIM {
-        class Category1 {
-            #define UIM_FUNC(name) PATHTO_FNC(display##name##.sqf)
-            UIM_FUNC(ColorPicker)
-            UIM_FUNC(GuiMessage)
-            UIM_FUNC(ListBox)
-            UIM_FUNC(ProgressBar)
-            UIM_FUNC(Slider)
-            UIM_FUNC(Text)
-            // PATHTO_FNC(displayColorPicker.sqf)
-            // PATHTO_FNC(displayGuiMessage.sqf)
-            // PATHTO_FNC(displayListBox.sqf)
-            // PATHTO_FNC(displayProgressBar.sqf)
-            // PATHTO_FNC(displaySlider.sqf)
-            // PATHTO_FNC(displayText.sqf)
-            #undef UIM_FUNC
+        class Functions {
+            PATHTO_FNC(displayColorPicker);
+            PATHTO_FNC(displayGuiMessage);
+            PATHTO_FNC(displayListBox);
+            PATHTO_FNC(displayProgressBar);
+            PATHTO_FNC(displaySlider);
+            PATHTO_FNC(displayText);
         };
     };
 };
