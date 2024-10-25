@@ -237,20 +237,6 @@
 	onLoad = ["onLoad",_this,#NAME,'##PATH##',false] call INIT_DISPLAY_FUNCTION; \
 	onUnload = ["onUnload",_this,#NAME,'##PATH##',false] call INIT_DISPLAY_FUNCTION;
 
-#ifndef MAINPREFIX
-    #define MAINPREFIX z
-#endif
-
-#define PREFIX uim
-
-#ifndef SUBPREFIX
-    #define SUBPREFIX addons
-#endif
-
-#ifndef MAINLOGIC
-    #define MAINLOGIC main
-#endif
-
 #define ADDON DOUBLES(PREFIX,COMPONENT)
 #define MAIN_ADDON DOUBLES(PREFIX,main)
 

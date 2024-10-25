@@ -22,16 +22,6 @@ class CfgPatches {
 #include "_macros.inc"
 #include "_defines.inc"
 
-#include "controls.hpp"
-#include "fnc_displayColorPicker.hpp"
-#include "fnc_displayGuiMessage.hpp"
-#include "fnc_displayListbox.hpp"
-#include "fnc_displayListboxMulti.hpp"
-#include "fnc_displayProgressBar.hpp"
-#include "fnc_displaySlider.hpp"
-#include "fnc_displayText.hpp"
-#include "fnc_displayTextMulti.hpp"
-
 class CfgFunctions {
     class UIM {
         class Functions {
@@ -44,3 +34,13 @@ class CfgFunctions {
         };
     };
 };
+
+#include "controls.hpp"
+#include "fnc_displayColorPicker.hpp"
+#include "fnc_displayGuiMessage.hpp"
+#include "fnc_displayListbox.hpp"
+#include "fnc_displayListboxMulti.hpp"
+#include "fnc_displayProgressBar.hpp"
+#include "fnc_displaySlider.hpp"
+#include "fnc_displayText.hpp"
+#include "fnc_displayTextMulti.hpp" 

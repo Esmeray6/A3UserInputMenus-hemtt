@@ -12,6 +12,20 @@
 #define DOUBLES(a,b) a##_##b
 #define TRIPLES(a,b,c) a##_##b##_##c
 
+#ifndef COMPONENT
+    #define COMPONENT main
+#endif
+
+#ifndef MAINPREFIX
+    #define MAINPREFIX z
+#endif
+
+#define PREFIX uim
+
+#ifndef SUBPREFIX
+    #define SUBPREFIX addons
+#endif
+
 #ifdef DISPLAY_NAME
     #define THIS_DISPLAY DISPLAY(DISPLAY_NAME)
     #define DISPLAY(name) uiNamespace getVariable [QUOTE(name),displayNull]
