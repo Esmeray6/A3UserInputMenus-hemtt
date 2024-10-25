@@ -11,7 +11,7 @@
 #define DIALOG_H SIZE_XXL
 
 class CAU_UserInputMenus_displayProgressBar: CAU_UserInputMenus_ctrlControlsGroupNoScrollbars {
-    onLoad = "uiNamespace setVariable ['CAU_UserInputMenus_displayProgressBar',_this#0];";
+    onLoad = "uiNamespace setVariable ['CAU_UserInputMenus_displayProgressBar', _this#0];";
 
     x = QUOTE(CENTER_XA(DIALOG_W));
     y = QUOTE(DIALOG_Y);

@@ -11,7 +11,7 @@
 
 class CAU_UserInputMenus_displayGuiMessage {
     idd = -1;
-    onLoad = "uiNamespace setVariable ['CAU_UserInputMenus_displayGuiMessage',_this#0]);";
+    onLoad = "uiNamespace setVariable ['CAU_UserInputMenus_displayGuiMessage', _this#0];";
 
     class controlsBackground {
         class tiles: CAU_UserInputMenus_ctrlStaticBackgroundDisableTiles {};
