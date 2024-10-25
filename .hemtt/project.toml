@@ -1,0 +1,21 @@
+name = "User Input Menus"
+author = "Esmeray"
+prefix = "uim"
+mainprefix = "z"
+
+[version]
+major = 1
+minor = 0
+patch = 0
+build = 0
+git_hash = 0
+
+[hemtt.launch.default]
+workshop = [
+    "450814997",  # CBA_A3
+    "1779063631", # Zeus Enhanced
+    # Zeus Enhanced requires CBA_A3. Otherwise, none of these are required. I just want to make my life easier here. :)
+    "623475643",  # 3den Enhanced
+    "2369477168", # Advanced Dev Tools
+]
+
