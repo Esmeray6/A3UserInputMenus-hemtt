@@ -19,11 +19,11 @@ class CfgPatches {
     };
 };
 
-#include "_macros.inc"
-#include "_defines.inc"
+#include "functions\_macros.inc"
+#include "functions\_defines.inc"
 
 class CfgFunctions {
-    class UIM {
+    class CAU_UserInputMenus {
         class Functions {
             PATHTO_FNC(displayColorPicker);
             PATHTO_FNC(displayGuiMessage);
@@ -36,11 +36,11 @@ class CfgFunctions {
 };
 
 #include "controls.hpp"
-#include "fnc_displayColorPicker.hpp"
-#include "fnc_displayGuiMessage.hpp"
-#include "fnc_displayListbox.hpp"
-#include "fnc_displayListboxMulti.hpp"
-#include "fnc_displayProgressBar.hpp"
-#include "fnc_displaySlider.hpp"
-#include "fnc_displayText.hpp"
-#include "fnc_displayTextMulti.hpp" 
+#include "displayColorPicker.hpp"
+#include "displayGuiMessage.hpp"
+#include "displayListbox.hpp"
+#include "displayListboxMulti.hpp"
+#include "displayProgressBar.hpp"
+#include "displaySlider.hpp"
+#include "displayText.hpp"
+#include "displayTextMulti.hpp" 
