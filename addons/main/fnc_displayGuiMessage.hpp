@@ -11,68 +11,68 @@
 
 class CAU_UserInputMenus_displayGuiMessage {
     idd = -1;
-    onLoad = "uiNamespace setVariable ['CAU_UserInputMenus_displayGuiMessage',_this#0]";
+    onLoad = "uiNamespace setVariable ['CAU_UserInputMenus_displayGuiMessage',_this#0])";
 
     class controlsBackground {
         class tiles: CAU_UserInputMenus_ctrlStaticBackgroundDisableTiles {};
         class background: CAU_UserInputMenus_ctrlStaticBackground {
-            idc = "IDC_BACKGROUND";
+            idc = QUOTE(IDC_BACKGROUND);
 
-            x = "CENTER_XA(DIALOG_W)";
-            y = "CENTER_YA(DIALOG_H)";
-            w = "PX_WA(DIALOG_W)";
-            h = "PX_HA(DIALOG_H)";
+            x = QUOTE(CENTER_XA(DIALOG_W));
+            y = QUOTE(CENTER_YA(DIALOG_H));
+            w = QUOTE(PX_WA(DIALOG_W));
+            h = QUOTE(PX_HA(DIALOG_H));
         };
         class title: CAU_UserInputMenus_ctrlStaticTitle {
-            idc = "IDC_TITLE";
+            idc = QUOTE(IDC_TITLE);
 
-            x = "CENTER_XA(DIALOG_W)";
-            y = "CENTER_YA(DIALOG_H)";
-            w = "PX_WA(DIALOG_W)";
-            h = "PX_HA(SIZE_M)";
+            x = QUOTE(CENTER_XA(DIALOG_W));
+            y = QUOTE(CENTER_YA(DIALOG_H));
+            w = QUOTE(PX_WA(DIALOG_W));
+            h = QUOTE(PX_HA(SIZE_M));
         };
         class footer: CAU_UserInputMenus_ctrlStaticFooter {
-            idc = "IDC_FOOTER";
+            idc = QUOTE(IDC_FOOTER);
 
-            x = "CENTER_XA(DIALOG_W)";
-            y = "CENTER_YA(DIALOG_H) + PX_HA(DIALOG_H) - PX_HA(SIZE_XXL)";
-            w = "PX_WA(DIALOG_W)";
-            h = "PX_HA(SIZE_XXL)";
+            x = QUOTE(CENTER_XA(DIALOG_W));
+            y = QUOTE(CENTER_YA(DIALOG_H) + PX_HA(DIALOG_H) - PX_HA(SIZE_XXL));
+            w = QUOTE(PX_WA(DIALOG_W));
+            h = QUOTE(PX_HA(SIZE_XXL));
         };
     };
     class controls {
         class textContainer: CAU_UserInputMenus_ctrlControlsGroup {
-            idc = "IDC_INPUTCONTAINER";
+            idc = QUOTE(IDC_INPUTCONTAINER);
 
-            x = "CENTER_XA(DIALOG_W) + PX_WA(2)";
-            y = "CENTER_YA(DIALOG_H) + PX_HA(SIZE_M) + PX_HA(4)";
-            w = "PX_WA(DIALOG_W) - PX_WA(4)";
-            h = "PX_HA(DIALOG_H) - PX_HA(SIZE_M) - PX_HA(SIZE_XXL) - PX_HA(4)";
+            x = QUOTE(CENTER_XA(DIALOG_W) + PX_WA(2));
+            y = QUOTE(CENTER_YA(DIALOG_H) + PX_HA(SIZE_M) + PX_HA(4));
+            w = QUOTE(PX_WA(DIALOG_W) - PX_WA(4));
+            h = QUOTE(PX_HA(DIALOG_H) - PX_HA(SIZE_M) - PX_HA(SIZE_XXL) - PX_HA(4));
 
             class controls {
                 class text: CAU_UserInputMenus_ctrlStructuredText {
-                    idc = "IDC_INPUT";
-                    size = "PX_HA(SIZE_M)";
+                    idc = QUOTE(IDC_INPUT);
+                    size = QUOTE(PX_HA(SIZE_M));
 
                     x = 0;
                     y = 0;
-                    w = "PX_WA(DIALOG_W) - PX_WA(4)";
-                    h = "PX_HA(DIALOG_H) - PX_HA(SIZE_M) - PX_HA(SIZE_XXL) - PX_HA(4)";
+                    w = QUOTE(PX_WA(DIALOG_W) - PX_WA(4));
+                    h = QUOTE(PX_HA(DIALOG_H) - PX_HA(SIZE_M) - PX_HA(SIZE_XXL) - PX_HA(4));
                 };
             };
         };
         class buttonL: CAU_UserInputMenus_ctrlButton {
-            idc = "IDC_BUTTONL";
+            idc = QUOTE(IDC_BUTTONL);
 
-            x = "CENTER_XA(DIALOG_W) + PX_WA(DIALOG_W) - PX_WA(((SIZE_M * 6) * 2)) - PX_WA(2)";
-            y = "CENTER_YA(DIALOG_H) + PX_HA(DIALOG_H) - PX_HA(SIZE_M) - PX_HA(1)";
-            w = "PX_WA((SIZE_M * 6))";
-            h = "PX_HA(SIZE_M)";
+            x = QUOTE(CENTER_XA(DIALOG_W) + PX_WA(DIALOG_W) - PX_WA(((SIZE_M * 6) * 2)) - PX_WA(2));
+            y = QUOTE(CENTER_YA(DIALOG_H) + PX_HA(DIALOG_H) - PX_HA(SIZE_M) - PX_HA(1));
+            w = QUOTE(PX_WA((SIZE_M * 6)));
+            h = QUOTE(PX_HA(SIZE_M));
         };
         class buttonR: buttonL {
-            idc = "IDC_BUTTONR";
+            idc = QUOTE(IDC_BUTTONR);
 
-            x = "CENTER_XA(DIALOG_W) + PX_WA(DIALOG_W) - PX_WA((SIZE_M * 6)) - PX_WA(1)";
+            x = QUOTE(CENTER_XA(DIALOG_W) + PX_WA(DIALOG_W) - PX_WA((SIZE_M * 6)) - PX_WA(1));
         };
     };
 };
