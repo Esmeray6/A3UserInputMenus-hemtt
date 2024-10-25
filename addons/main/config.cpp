@@ -25,12 +25,12 @@ class CfgPatches {
 class CfgFunctions {
     class CAU_UserInputMenus {
         class Functions {
-            PATHTO_FNC(displayColorPicker);
-            PATHTO_FNC(displayGuiMessage);
-            PATHTO_FNC(displayListBox);
-            PATHTO_FNC(displayProgressBar);
-            PATHTO_FNC(displaySlider);
-            PATHTO_FNC(displayText);
+            PATHTO_FNC(colorPicker);
+            PATHTO_FNC(guiMessage);
+            PATHTO_FNC(listBox);
+            PATHTO_FNC(progressBar);
+            PATHTO_FNC(slider);
+            PATHTO_FNC(text);
         };
     };
 };
