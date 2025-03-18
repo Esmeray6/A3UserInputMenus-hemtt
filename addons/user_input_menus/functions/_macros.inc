@@ -238,7 +238,7 @@
 	onUnload = ["onUnload",_this,#NAME,'##PATH##',false] call INIT_DISPLAY_FUNCTION;
 
 #define ADDON DOUBLES(PREFIX,COMPONENT)
-#define MAIN_ADDON DOUBLES(PREFIX,main)
+#define MAIN_ADDON DOUBLES(PREFIX,user_input_menus)
 
 #ifdef SUBCOMPONENT
     #define SUBADDON DOUBLES(ADDON,SUBCOMPONENT)
